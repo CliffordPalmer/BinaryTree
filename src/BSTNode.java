@@ -1,8 +1,8 @@
 /**
  * The Node for an Integer Binary Tree
  *
- * @author: Nandhini Namasivayam
- * @version: 03/22/22
+ * @author: Nandhini Namasivayam and Clifford Palmer
+ * @version: 04/15/2024
  */
 
 public class BSTNode {
@@ -37,6 +37,10 @@ public class BSTNode {
         return val;
     }
 
+    // Function which returns a boolean for whether the node is a leaf of the tree or not
+    public boolean isLeaf(){
+        return (left == null && right == null);
+    }
     public String toString() {
         return Integer.toString(this.val);
     }
